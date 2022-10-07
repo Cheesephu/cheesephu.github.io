@@ -96,8 +96,8 @@ body {
 .card.is-active .card-avatar {
     transform: none;
     left: 20px;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     bottom: 10px;
 }
 
