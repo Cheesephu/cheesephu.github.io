@@ -231,21 +231,21 @@
     document.onkeypress = function(event) {
         event = (event || window.event);
         if (event.keyCode == 123) {
-            alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
+            // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
             return false;
         }
     }
     document.onmousedown = function(event) {
         event = (event || window.event);
         if (event.keyCode == 123) {
-            alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
+            // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
             return false;
         }
     }
     document.onkeydown = function(event) {
         event = (event || window.event);
         if (event.keyCode == 123) {
-            alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
+            // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
             return false;
         }
     }
@@ -257,12 +257,12 @@
             var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
 
             if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u" || pressedKey == "s" )) {
-                alert('Xin lỗi bạn hí hí, mình tắt tổ hợp phím này rồi!!');
+                // alert('Xin lỗi bạn hí hí, mình tắt tổ hợp phím này rồi!!');
                 //disable key press porcessing
                 return false;
             }
             if (event.ctrlKey && event.shiftKey && (pressedKey == "i")) {
-                alert('Xin lỗi bạn hí hí, mình tắt tổ hợp phím này rồi!!');
+                // alert('Xin lỗi bạn hí hí, mình tắt tổ hợp phím này rồi!!');
                 //disable key press porcessing
                 return false;
             }
