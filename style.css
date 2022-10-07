@@ -43,7 +43,7 @@ body {
 }
 
 .card {
-    max-width: 420px;
+    max-width: 450px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -58,7 +58,7 @@ body {
 }
 
 .card[data-state="#about"] {
-    height: 550px;
+    height: 570px;
 }
 
 .card[data-state="#about"] .card-main {
@@ -71,12 +71,12 @@ body {
 }
 
 .card[data-state="#experience"] {
-    height: 500px;
+    height: 510px;
     width: 350px;
 }
 
 .card[data-state="#payment"] {
-    height: 500px;
+    height: 510px;
     width: 350px;
 }
 /* .card[data-state="#cv"] {
