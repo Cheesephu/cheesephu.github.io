@@ -66,8 +66,8 @@ body {
 }
 
 .card[data-state="#contact"] {
-    height: 300px;
-    width: 350px;
+    height: 259px;
+    width: 200px;
 }
 
 .card[data-state="#experience"] {
