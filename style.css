@@ -58,7 +58,7 @@ body {
 }
 
 .card[data-state="#about"] {
-    height: 500;
+    height: 50;
 }
 
 .card[data-state="#about"] .card-main {
