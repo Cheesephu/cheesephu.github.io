@@ -66,17 +66,17 @@ body {
 }
 
 .card[data-state="#contact"] {
-    height: 530px;
+    height: 500px;
     width: 350px;
 }
 
 .card[data-state="#experience"] {
-    height: 510px;
+    height: 550px;
     width: 350px;
 }
 
 .card[data-state="#payment"] {
-    height: 510px;
+    height: 540px;
     width: 350px;
 }
 /* .card[data-state="#cv"] {
