@@ -58,7 +58,7 @@ body {
 }
 
 .card[data-state="#about"] {
-    height: 500px;
+    height: auto;
 }
 
 .card[data-state="#about"] .card-main {
@@ -66,17 +66,17 @@ body {
 }
 
 .card[data-state="#contact"] {
-    height: 300px;
-    width: 200px;
+    height: auto;
+    width: 350px;
 }
 
 .card[data-state="#experience"] {
-    height: 400px;
+    height: auto;
     width: 350px;
 }
 
 .card[data-state="#payment"] {
-    height: 450px;
+    height: auto;
     width: 350px;
 }
 /* .card[data-state="#cv"] {
