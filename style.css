@@ -71,7 +71,7 @@ body {
 }
 
 .card[data-state="#experience"] {
-    height: 650px;
+    height: 600px;
     width: 500px;
 }
 
