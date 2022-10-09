@@ -58,7 +58,7 @@ body {
     transition: 0.3s;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 0 0 0 8px rgb(255, 166, 0);
+    box-shadow: 0 0 0 8px #ff9100;
 }
 
 .card[data-state="#about"] {
