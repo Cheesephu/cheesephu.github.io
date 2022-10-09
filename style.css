@@ -411,6 +411,11 @@ body {
     border-right: 1px solid #000000;
 }
 
+.card-contact a:hover svg {
+    fill: #ff9100;
+}
+
+
 .contact-me {
     border: 0;
     outline: none;
