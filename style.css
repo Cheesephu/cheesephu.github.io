@@ -385,11 +385,12 @@ body {
     margin-top: 60px;
 }
 
+
 .card-contact {
     display: flex;
     align-items: center;
     font-size: 13px;
-    color: #f9f9ff;
+    color: #000000;
     font-family: "Work Sans", sans-serif;
     line-height: 1.6;
     cursor: pointer;
@@ -400,13 +401,14 @@ body {
 }
 
 .card-contact svg {
+    color: #000000;
     flex-shrink: 0;
     width: 30px;
     min-height: 34px;
     margin-right: 12px;
     transition: 0.3s;
     padding-right: 12px;
-    border-right: 1px solid #dfe2ec;
+    border-right: 1px solid #000000;
 }
 
 .contact-me {
