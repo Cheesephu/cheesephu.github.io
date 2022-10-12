@@ -83,11 +83,6 @@ body {
     height: 540px;
     width: 350px;
 }
-/* .card[data-state="#cv"] {
-    height: 550px;
-    width: 400px;
-} */
-
 .card.is-active .card-header {
     height: 150px;
 }
