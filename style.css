@@ -68,7 +68,7 @@ header{
     display: none;
     position: absolute;
     top: 50px;
-    right: 30px;
+    right: 50px;
     width: 35px;
 }
 
@@ -84,7 +84,7 @@ header{
     .navbar .logo {
         position: absolute;
         top: 50px;
-        left: 50px;
+        right: 50px;
         color: white;
 
     }
@@ -92,6 +92,9 @@ header{
     .navbar .menu-baby {
         display: block;
         z-index: 2;
+        top: 50px;
+        left: 10%;
+
     }
 
     .nav-links {
@@ -130,7 +133,12 @@ header{
         font-size: 1.5em;
 
     }
+    .listFigure .item .content{
+        font-size: xx-small;
+    }
+
 }
+
 
 
 .container{
@@ -259,6 +267,7 @@ header{
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 30px;
+    font-size: 15px;
 }
 .listFigure .item{
     display: grid;
@@ -425,6 +434,4 @@ header{
 .delay-24{
     animation-delay: 2.4s!important;
 }
-
-
 
