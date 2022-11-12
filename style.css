@@ -11,8 +11,8 @@ body{
 
 header{
     padding-top :30% ;
-    height: 1200px;
-    width: 3000px;
+    height: 100%;
+    width: 100%;
     background-image: url(img/landscape.jpg);
     background-size: cover ;
     min-width: 600px;
