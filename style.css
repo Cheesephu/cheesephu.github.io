@@ -15,10 +15,12 @@ header{
     width: 100%;
     background-image: url(img/landscape.jpg);
     background-size: cover ;
-    min-width: 600px;
-    min-height: 1400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     z-index: -1;
 }
+
+
 
 
 
