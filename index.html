@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Profile </title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="1aa04203d7e31d0043d49dca-text/javascript"></script>
+
 </head>
 <body>
 
@@ -171,7 +174,52 @@
             </div>
         </div>
     </header>
+
+    <script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" defer=""></script>
+
+    <script type="text/javascript">
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+                (function() {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                            var elem = sheets[i];
+                            var parent = elem.parentElement || head;
+                            parent.removeChild(elem);
+                            var rel = elem.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
+                        }
+                    }
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function(msg) {
+                        if (msg.data == 'reload') window.location.reload();
+                        else if (msg.data == 'refreshcss') refreshCSS();
+                    };
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                    }
+                })();
+            } else {
+                console.error('Nâng cấp trình duyệt của bạn. Trình duyệt này KHÔNG được hỗ trợ WebSocket để tải lại trực tiếp.');
+            }
+            // ]]>
+        </script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/player.js"></script>
+
 </body>
+
+<script src="./scripts/script.js"></script>
+<script src="./scripts/player.js"></script>
 
 <script>
     const menubaby = document.querySelector(".menu-baby")
@@ -180,6 +228,78 @@
     menubaby.addEventListener('click',()=>{
     navLinks.classList.toggle('mobile-menu')
     })
+    
+</script>
+
+<audio id="lesson" src="assets\inten.mp3"  hidden="true" loop="true" autoplay="false"></audio>
+
+<script type="text/javascript">
+    var play = false;
+    var myAudio = document.getElementById("lesson");
+
+    myAudio.volume = 0.5;
+
+    function onKeyDown(event) {
+        switch (event.keyCode) {
+            case 32:
+                if (play) {
+                    myAudio.pause();
+                    play = false;
+                } else {
+                    myAudio.play();
+                    play = true;
+                }
+                break;
+        }
+        return false;
+    }
+
+    window.addEventListener("keydown", onKeyDown, false);
+
+    // To disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // To disable F12 options
+    document.onkeypress = function(event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
+            return false;
+        }
+    }
+    document.onmousedown = function(event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
+            return false;
+        }
+    }
+    document.onkeydown = function(event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
+            return false;
+        }
+    }
+
+    // To To Disable ctrl+c, ctrl+u
+
+    jQuery(document).ready(function($) {
+        $(document).keydown(function(event) {
+            var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+
+            if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u" || pressedKey == "s" )) {
+                // alert('Xin lỗi bạn hí hí, mình tắt tổ hợp phím này rồi!!');
+                //disable key press porcessing
+                return false;
+            }
+            if (event.ctrlKey && event.shiftKey && (pressedKey == "i")) {
+                // alert('Xin lỗi bạn hí hí, mình tắt tổ hợp phím này rồi!!');
+                //disable key press porcessing
+                return false;
+            }
+        });
+    }); 
 </script>
 
 </html>
