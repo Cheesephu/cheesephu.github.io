@@ -63,6 +63,12 @@ header{
 .navbar .nav-links ul li {
     margin: 0 30px;
     font-size: 1.2em;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.navbar .nav-links ul li:hover{
+    transform: scale(1.4);
 }
 
 .navbar .nav-links ul li.active a {
