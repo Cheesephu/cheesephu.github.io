@@ -62,7 +62,7 @@ header{
 
 .navbar .nav-links ul li {
     margin: 0 30px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     transform: scale(1);
     transition: 0.5s;
 }
