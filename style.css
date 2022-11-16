@@ -18,6 +18,7 @@ body{
 header{
     padding-top :30% ;
     height: 100%;
+    width: 100%;
     background-image: url(img/background.gif);
     background-size: cover ;
     min-width: calc(100vh);
@@ -166,7 +167,7 @@ header{
 
     .container{
         background-color: #fff7e1;
-        width: 100%;
+       width: 100%;
         height: auto;
         position: absolute;
         top: 14%;
@@ -181,15 +182,6 @@ header{
         grid-template-columns: 75% 25%;
         min-width: 500px;
     }
-
-    header {
-        width: fit-content;
-        padding-left: 50%;
-        padding-right: 50%;
-        padding-top: 50%;
-        z-index: -1;
-    }
-
     
 
 }
