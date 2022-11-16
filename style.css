@@ -20,9 +20,6 @@ header{
     min-height: calc(150vh);
     background-position: center;
     z-index: -1;
-    padding-top: 15%;
-    padding-left: 15%;
-    padding-right: 15%;
 
 }
 
@@ -181,10 +178,10 @@ header{
     background-color: #fff7e1;
     width: 70%;
     position: absolute;
-    /* top: 14%;
+    top: 14%;
     left: 13%;
     right:50%;
-    bottom: -89%; */
+    bottom: -89%;
     border-radius: 30px;
     min-height: max-content;
     min-width: max-content;
