@@ -8,12 +8,17 @@
 body{
     font-family: monospace;
     margin: 0;
+    width: 100%;
+    height: auto;
     background-color: #000000;
+    min-width: 900px;
+    min-height: fit-content;
 }
 
 header{
     padding-top :30% ;
     height: 100%;
+    width: 100%;
     background-image: url(img/background.gif);
     background-size: cover ;
     min-width: calc(100vh);
@@ -160,6 +165,24 @@ header{
         font-size: xx-small;
     }
 
+    .container{
+        background-color: #fff7e1;
+       width: 100%;
+        height: auto;
+        position: absolute;
+        top: 14%;
+        left: 10%;
+        right:10%;
+        /* bottom: -89%; */
+        border-radius: 30px;
+        min-height: 70%;
+        min-width: max-content;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 75% 25%;
+        min-width: 500px;
+    }
+
     
 
 }
@@ -179,13 +202,14 @@ header{
     width: 70%;
     height: fit-content;
     position: absolute;
+    margin: center;
+    left: 15%;
+    right: 15%;
     top: 15%;
-    left: 13%;
-    right:50%;
     /* bottom: -89%; */
     border-radius: 30px;
     min-height: 70%;
-    min-width: max-content;
+    min-width: fit-content;
     overflow: hidden;
     display: grid;
     grid-template-columns: 75% 25%;
