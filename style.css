@@ -180,12 +180,12 @@ header{
 
 .container{
     background-color: #fff7e1;
-    width: 70%;
+    width: 80%;
     position: absolute;
     top: 14%;
-    left: 13%;
-    right:50%;
-    bottom: -89%;
+    left: 30%;
+    right:30%;
+    /* bottom: -89%; */
     border-radius: 30px;
     min-height: max-content;
     min-width: max-content;
