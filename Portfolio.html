@@ -7,6 +7,8 @@
     <title>Profile - Portfolio </title>
     <link rel="stylesheet" href="Portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="1aa04203d7e31d0043d49dca-text/javascript"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -238,4 +240,85 @@
     </footer>
     
 </body>
+<script>
+    const menubaby = document.querySelector(".menu-baby")
+    const navLinks = document.querySelector(".nav-links")
+
+    menubaby.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+    
+</script>
+
+<audio id="lesson" src="assets\inten.mp3"  hidden="true" loop="true" autoplay="false"></audio>
+
+<script type="text/javascript">
+    var play = false;
+    var myAudio = document.getElementById("lesson");
+
+    myAudio.volume = 0.5;
+
+    function onKeyDown(event) {
+        switch (event.keyCode) {
+            case 32:
+                if (play) {
+                    myAudio.pause();
+                    play = false;
+                } else {
+                    myAudio.play();
+                    play = true;
+                }
+                break;
+        }
+        return false;
+    }
+
+    window.addEventListener("keydown", onKeyDown, false);
+
+    // To disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // To disable F12 options
+    document.onkeypress = function(event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
+            return false;
+        }
+    }
+    document.onmousedown = function(event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
+            return false;
+        }
+    }
+    document.onkeydown = function(event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
+            return false;
+        }
+    }
+
+    // To To Disable ctrl+c, ctrl+u
+
+    jQuery(document).ready(function($) {
+        $(document).keydown(function(event) {
+            var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+
+            if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u" || pressedKey == "s" )) {
+                // alert('Xin lỗi bạn hí hí, mình tắt tổ hợp phím này rồi!!');
+                //disable key press porcessing
+                return false;
+            }
+            if (event.ctrlKey && event.shiftKey && (pressedKey == "i")) {
+                // alert('Xin lỗi bạn hí hí, mình tắt tổ hợp phím này rồi!!');
+                //disable key press porcessing
+                return false;
+            }
+        });
+    }); 
+</script>
+
 </html>
