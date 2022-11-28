@@ -394,6 +394,11 @@ header{
 }
 
 @media screen and (max-width: 900px) {
+
+    .body{ 
+        width: 900px;
+    }
+
     .navbar {
         padding: 0;
     } 
@@ -430,7 +435,7 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: -100%;
+        margin-top: -200%;
         transition: all 0.5s ease ;
         z-index: 1;
     }
@@ -440,7 +445,7 @@ header{
     }
 
     .nav-links.mobile-menu{
-        margin-left: 0 ;
+        margin-top: 0 ;
         /* z-index: 1; */
     
     }
@@ -472,9 +477,11 @@ header{
     
 }
 @media screen and (max-width: 820px) {
+
+
    
     .container{
-        width: 780px;
+        width: 700px;
     }
         .listFigure{
             grid-template-columns: 100%;
@@ -492,6 +499,20 @@ header{
 @media screen and (max-width: 720px) {
 .container{
     width: 700px;
+}
+
+.navbar .logo {
+    position: absolute;
+    top: 40px;
+    right: -10px;
+    color: rgb(255, 0, 0);
+    z-index: 1;
+ 
+
+}
+
+.nav-links {
+    width: 800px;
 }
 
 .listFigure{
@@ -516,6 +537,8 @@ header{
     
 }
 @media screen and (max-width: 500px){
+
+
     .navbar .logo {
         position: absolute;
         top: 40px;
@@ -527,3 +550,18 @@ header{
     }
 }
     
+footer{
+    background-color: rgb(0, 0, 0);
+    margin-top:20px;
+    padding:100px 0;
+}
+
+ footer .content .titless {
+ color: #ffffff;
+ text-align: center;
+
+}
+
+footer .content .titless a {
+    color: #ff0000;
+}
