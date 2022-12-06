@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Profile - Home </title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="1aa04203d7e31d0043d49dca-text/javascript"></script>
-
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -30,9 +30,11 @@
         <div class="container">
             <div class="center">
                 <div class="bigTitle animationTop delay-04">CheesePhu - Home </div>
+
                 <div class="banner">
                     <img src="img/img1.jpg" class="animationTop delay-05">
                 </div>
+
         
                 <!-- category -->
                 <div class="bigTitle animationTop delay-09">Thông Tin Liên Hệ</div>
@@ -67,7 +69,7 @@
                             <img src="img/img2.jpg" alt="">
                         </div>
                         <div class="content">
-                            <h1>Giới Thiệu Bản Thân </h1>
+                            <h1> Giới Thiệu Bản Thân </h1>
                             <h2 class="card-desc"><strong>NickName:</strong>
                                 <br> CheesePhu<br>
                                 <strong>Học tại:</strong>
@@ -84,8 +86,10 @@
                             <img src="img/img3.jpg" alt="">
                         </div>
                         <div class="content">
-                            <h1>Mục tiêu nghề nghiệp</h1>
+                           <strong><h1>Mục tiêu nghề nghiệp</h1></strong> 
+                        <div class="des-profile" >
                             Là sinh viên tốt nghiệp chuyên ngành mỹ thuật ứng dụng. Em rất yêu thích công việc thiết kế đồ hoạ và rất mong muốn làm ra được những sản phẩm đồ hoạ đẹp và sáng tạo. Em đã theo học và đạt được chứng chỉ thiết kế đề hoạ tại FPT Polytechic. Am hiểu về các phần mềm thiết kế CorelDraw, Photoshop, Illustrator, 3dsmax, maya, ... và có khả năng tư duy, sáng tạo, kiên trì, chịu khó. Ngoài ra em con có thêm kiến thức về coder trong ngàng thiết kế UI/Ux.  Em mong muốn tìm được công việc nhân viên thiết kế đồ hoạ phù hợp để có thể vận dụng và phát huy tốt những kiến thức em đã được học. Với sự chăm chỉ và ham học hỏi, em sẽ tích luỹ kinh nghiệm làm việc để có thể phát triển và thành công với nghề nghiệp mà em đã lựa chọn.                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,7 +182,7 @@
     <footer>
         <div class="content">
                 <div class="titless">
-                    <h1>designer & code by <a href="https://www.facebook.com/CheesePhu/" >cheesePhu</a></h1>
+                    <h1>Designer & code By <a href="https://www.facebook.com/CheesePhu/" >CheesePhu</a></h1>
                 </div>
         </div>
     </footer>
@@ -262,52 +266,52 @@
         return false;
     }
 
-    window.addEventListener("keydown", onKeyDown, false);
+    // window.addEventListener("keydown", onKeyDown, false);
 
-    // To disable right click
-    document.addEventListener('contextmenu', event => event.preventDefault());
+    // // To disable right click
+    // document.addEventListener('contextmenu', event => event.preventDefault());
 
-    // To disable F12 options
-    document.onkeypress = function(event) {
-        event = (event || window.event);
-        if (event.keyCode == 123) {
-            // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
-            return false;
-        }
-    }
-    document.onmousedown = function(event) {
-        event = (event || window.event);
-        if (event.keyCode == 123) {
-            // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
-            return false;
-        }
-    }
-    document.onkeydown = function(event) {
-        event = (event || window.event);
-        if (event.keyCode == 123) {
-            // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
-            return false;
-        }
-    }
+    // // To disable F12 options
+    // document.onkeypress = function(event) {
+    //     event = (event || window.event);
+    //     if (event.keyCode == 123) {
+    //         // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
+    //         return false;
+    //     }
+    // }
+    // document.onmousedown = function(event) {
+    //     event = (event || window.event);
+    //     if (event.keyCode == 123) {
+    //         // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
+    //         return false;
+    //     }
+    // }
+    // document.onkeydown = function(event) {
+    //     event = (event || window.event);
+    //     if (event.keyCode == 123) {
+    //         // alert('Xin lỗi bạn hí hí, mình tắt phím này rồi!!');
+    //         return false;
+    //     }
+    // }
 
-    // To To Disable ctrl+c, ctrl+u
+    // // To To Disable ctrl+c, ctrl+u
 
-    jQuery(document).ready(function($) {
-        $(document).keydown(function(event) {
-            var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+    // jQuery(document).ready(function($) {
+    //     $(document).keydown(function(event) {
+    //         var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
 
-            if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u" || pressedKey == "s" )) {
-                // alert('Xin lỗi bạn hí hí, mình tắt tổ hợp phím này rồi!!');
-                //disable key press porcessing
-                return false;
-            }
-            if (event.ctrlKey && event.shiftKey && (pressedKey == "i")) {
-                // alert('Xin lỗi bạn hí hí, mình tắt tổ hợp phím này rồi!!');
-                //disable key press porcessing
-                return false;
-            }
-        });
-    }); 
+    //         if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u" || pressedKey == "s" )) {
+    //             // alert('Xin lỗi bạn hí hí, mình tắt tổ hợp phím này rồi!!');
+    //             //disable key press porcessing
+    //             return false;
+    //         }
+    //         if (event.ctrlKey && event.shiftKey && (pressedKey == "i")) {
+    //             // alert('Xin lỗi bạn hí hí, mình tắt tổ hợp phím này rồi!!');
+    //             //disable key press porcessing
+    //             return false;
+    //         }
+    //     });
+    // }); 
 </script>
 
 </html>
