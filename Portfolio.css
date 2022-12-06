@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: navbar-font;
+    src: url(font/NexaText-Trial-ExtraBold.ttf);
+ }
+
 body{
     margin:0;
     font-family: monospace;
@@ -34,6 +39,7 @@ header::before{
 
 
 .navbar {
+    font-family: navbar-font;
     position: absolute;
     padding: 20px;
     display: flex;
