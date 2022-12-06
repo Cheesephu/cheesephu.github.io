@@ -4,6 +4,16 @@
     src: url(font/NexaText-Trial-ExtraBold.ttf);
  }
 
+
+ @font-face{
+    font-family: title-big;
+    src: url(font/UVNThanhPho_R.TTF);
+}
+@font-face{
+    font-family: titile-small;
+    src: url(font/UVNThanhPho.TTF);
+}
+
 body{
     margin:0;
     font-family: monospace;
@@ -232,11 +242,13 @@ header h1{
 }
 
 .bigTitle{
+    font-family: title-big;
     font-size: xx-large;
     text-align: center;
     margin:130px 0;
 }
 .bigTitle .des{
+    font-family: title-small;
     font-size: large;
     max-width: 500px;
     margin: 10px auto;
