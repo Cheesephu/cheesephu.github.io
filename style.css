@@ -438,13 +438,6 @@ header{
     
 }
 
-@media screen and (max-width: 1024px) {
-
-    .listFigure .item .content{
-        font-size: x-small;
-    }
-    
-}
 
 @media screen and (max-width: 1140px) {
 
@@ -535,10 +528,9 @@ header{
     .actor li {
         grid-template-columns: 20px auto ;
     }
-    /* .actor .container .content{
-        font-size: xx-small;
+    .listFigure .item .content{
+        font-size: x-small;
     }
-     */
 }
 @media screen and (max-width: 820px) {
 
