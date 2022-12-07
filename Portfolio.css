@@ -76,7 +76,8 @@ header::before{
     font-size: 3em;
     font-weight: bold ;
     color: #ff0000;
-    font-family: 'Lobster', cursive;
+    font-family: navbar-font;
+    
 }
 
 
@@ -127,6 +128,7 @@ header::before{
         right: 50px;
         color: rgb(255, 0, 0);
         z-index: 1;
+
      
 
     }
