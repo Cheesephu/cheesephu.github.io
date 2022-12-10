@@ -37,19 +37,20 @@ h1 {
 
 
 body{
-    margin: 0;
+    margin: auto;
     background-color: #000000;
 }
 
 header{
     padding-top: 160px;
+    padding-bottom: 100px;
     height: 100%;
-    background-image: url(img/background.gif);
-    background-size: cover ;
+    background: rgb(248, 14, 116);
+    background: linear-gradient(142deg, rgba(238,174,202,1) 0%, rgba(167,130,255,1) 51%, rgba(148,187,233,1) 100%);
     min-width: calc(100vh);
     min-height: calc(150vh);
     background-position: center;
-    z-index: -1;
+    z-index: -1
 
 }
 
@@ -131,12 +132,11 @@ header{
 }
 
 .container{
-    /* background-image: url(img/vibrant-summer-ombre-background-vector_53876-105765.webp);
-    background-size: cover; */
-    background-color: #FCF5F3;
+    background-color: #ffffff0e;
+    backdrop-filter: blur(10%);
+    box-shadow: 0px 20px 40px #000000;
     width: 80%;
     margin-inline: auto;
-    /* bottom: -89%; */
     border-radius: 30px;
     min-height: max-content;
     min-width: max-content;
@@ -162,12 +162,13 @@ header{
     margin-top: 22% ;
 } */
 .right{
-    background-color: #ff8800;
+    background-color: #ff8800c4;
 }
 
 .center{
     padding:30px;
     margin: 2%;
+    filter: blur(10%);
 }
 .bigTitle{
     font-size: xx-large;
@@ -605,8 +606,9 @@ header{
     
 footer{
     background-color: rgb(0, 0, 0);
-    margin-top:20px;
+    margin-inline: center;
     padding:100px 0;
+
 }
 
  footer .content .titless {
