@@ -45,9 +45,8 @@ header{
     padding-top: 160px;
     padding-bottom: 100px;
     height: 100%;
-    background: rgb(248, 14, 116);
-    background: linear-gradient(142deg, rgba(238,174,202,1) 0%, rgba(167,130,255,1) 51%, rgba(148,187,233,1) 100%);
-    min-width: calc(100vh);
+    background: rgb(252,184,252);
+    background: linear-gradient(38deg, rgba(252,184,252,1) 0%, rgba(197,210,255,1) 25%, rgba(137,171,255,1) 49%, rgba(75,206,255,1) 75%, rgba(75,255,208,1) 100%);    min-width: calc(100vh);
     min-height: calc(150vh);
     background-position: center;
     z-index: -1
@@ -162,7 +161,8 @@ header{
     margin-top: 22% ;
 } */
 .right{
-    background-color: #ff8800c4;
+    background: rgb(238,174,202);
+    background: linear-gradient(193deg, rgba(238,174,202,1) 0%, rgba(167,130,255,1) 51%, rgba(148,187,233,1) 100%);
 }
 
 .center{
@@ -259,25 +259,55 @@ header{
 .listFigure{
     position: relative;
     display: grid;
-    grid-template-columns: 60% 40%;
-    column-gap: 1%;
+    grid-template-columns: 50% 50%;
+    column-gap: 2%;
     grid-template-rows: 300px 300px;
     row-gap: 15px;
+    z-index: 1;
 }
 .listFigure .item{
     display: grid;
     grid-template-columns: 50% 50%;
-    column-gap: 10px;
+    column-gap: 5px;
+    background-color: rgba(255, 255, 255, 0.301) ;
+    margin-inline: auto;
+    padding: 10px;
+    height: fit-content;
+    border-radius: 30px;
 }
+
+
+.zoom-content{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.zoom-content:hover{
+    transform:scale(1.5) ;
+    width: 300px;
+    padding-inline: center;
+    z-index: 1;
+}
+
+
 .listFigure .item img{
     width:100%;
     height:90%;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 10px 20px #c4beb7;
+    box-shadow: 0 10px 20px #ffffffb2;
+    z-index: -1;
+
 }
 .listFigure .item .content{
     text-align: left;
+    background-color: rgba(255, 255, 255, 0.808);
+    border-radius: 10px;
+    margin-inline: auto;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 5px;
+    z-index: 2;
 }
 .director{
     text-align: center;
