@@ -45,10 +45,11 @@ header{
     padding-top: 160px;
     padding-bottom: 100px;
     height: 100%;
-    background: rgb(252,184,252);
-    background: linear-gradient(38deg, rgba(252,184,252,1) 0%, rgba(197,210,255,1) 25%, rgba(137,171,255,1) 49%, rgba(75,206,255,1) 75%, rgba(75,255,208,1) 100%);    min-width: calc(100vh);
+    background: #6fb89f;
+    background: linear-gradient(38deg, rgba(2,28,30,1) 0%, rgba(33,72,62,1) 0%, rgba(0,68,69,1) 33.3%, rgba(44,120,115,1) 66.6%, rgba(111,185,143,1) 100%);
     min-height: calc(150vh);
     background-position: center;
+    min-width: max-content;
     z-index: -1
 
 }
@@ -162,8 +163,7 @@ header{
     margin-top: 22% ;
 } */
 .right{
-    background: rgb(238,174,202);
-    background: linear-gradient(193deg, rgba(238,174,202,1) 0%, rgba(167,130,255,1) 51%, rgba(148,187,233,1) 100%);
+    background: #6fb89f;
 }
 
 .center{
@@ -184,7 +184,7 @@ header{
 .banner img{
     width:100%;
     border-radius: 30px;
-    box-shadow: 0 20px 50px #fcc17e;
+    box-shadow: 0 20px 50px #6fb89f;
 }
 
 .overlay {
@@ -308,6 +308,7 @@ header{
     grid-template-columns: 50% 50%;
     column-gap: 5px;
     background-color: rgba(255, 255, 255, 0.301) ;
+    box-shadow: 0 20px 50px #6fb89f;
     margin-inline: auto;
     padding: 10px;
     height: fit-content;
