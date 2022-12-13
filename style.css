@@ -259,23 +259,23 @@ header{
     height:50px;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow:  0 10px 20px #c4beb7;
+    box-shadow:  0 5px 15px #c4beb7;
     display: flex;
     justify-content: center;
     align-items: center;
     margin:0 auto 5px;
 }
 .category li:nth-child(1) i{
-    color:#2f00ff;
+    color:#000000;
 }
 .category li:nth-child(2) i{
-    color:#ffa600;
+    color:#2f00ff;
 }
 .category li:nth-child(3) i{
     color:#00ff0d;
 }
 .category li:nth-child(4) i{
-    color:#000000;
+    color:#00a2ff;
 }
 .category li:nth-child(5) i{
     color:#ff0000;
