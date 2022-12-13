@@ -548,10 +548,8 @@ header{
     .navbar .menu-baby {
         display: block;
         z-index: 2;
-        /* width: 100%; */
         top: 50px;
         left: 10%;
-        background-color: #f0f0f0b4;
 
 
     }
