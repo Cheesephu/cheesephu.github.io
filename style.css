@@ -45,10 +45,10 @@ body{
     box-sizing:border-box;
     overflow: auto;
     display: block;
+    
 }
 
 header{
-    transform: scale(auto);
     padding-top: 160px;
     padding-bottom: 100px;
     height: 100%;
