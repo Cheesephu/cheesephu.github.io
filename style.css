@@ -24,7 +24,7 @@
 }
  
 html{
-    -webkit-text-size-adjust: 100%;
+       -webkit-text-size-adjust: 100%;
 }
 
 h1 {
@@ -745,17 +745,4 @@ button {
     z-index: 2;
   } */
 
-  .playlist-box {
-    ...
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.1);
-}
-.playlist-box.active {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-}
-
-
-
+  
