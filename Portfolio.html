@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile - Portfolio </title>
+    <title> Profile - Home </title>
     <link rel="stylesheet" href="Portfolio.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="1aa04203d7e31d0043d49dca-text/javascript"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -22,7 +23,16 @@
                 <li><a href="Contract.html"> Contract </a></li>
             </ul>
         </div>
-        <img src="img/menu-btn.png" alt="menu-baby" class="menu-baby">
+        <button class="menu-baby" aria-controls="primary-navigation" aria-expanded="false">
+            <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100">
+              <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
+              </rect>
+              <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
+              </rect>
+              <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
+              </rect>
+            </svg>
+        </button>
     </nav>
     <header>
         <h1 class="radianl" style="color: white ;">CheesePhu-Portfolio  </h1>
@@ -172,23 +182,15 @@
     </footer>
     
 </body>
-<script>
-    const menubaby = document.querySelector(".menu-baby")
-    const navLinks = document.querySelector(".nav-links")
-
-    menubaby.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
-    })
-    
-</script>
+<script src="./scripts/script.js"></script>
+<script src="./scripts/player.js"></script>
 
 <audio id="lesson" src="assets\inten.mp3"  hidden="true" loop="true" autoplay="false"></audio>
-
 <script type="text/javascript">
     var play = false;
     var myAudio = document.getElementById("lesson");
 
-    myAudio.volume = 0.5;
+    myAudio.volume = 0.2;
 
     function onKeyDown(event) {
         switch (event.keyCode) {
@@ -252,5 +254,4 @@
         });
     }); 
 </script>
-
 </html>
