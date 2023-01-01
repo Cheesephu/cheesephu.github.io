@@ -11,19 +11,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="1aa04203d7e31d0043d49dca-text/javascript"></script>
 </head>
 <body>
-
     <nav class="navbar">
         <a href="index.html" class="logo"> CheesePhu </a>
         <div class="nav-links">
             <ul>
-                <li  ><a href="index.html">Home</a></li>
-                <li class="active"><a href="Adventures.html">Adventures</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active" ><a href="Adventures.html">Adventures</a></li>
                 <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="https://www.behance.net/cheesephu02" target="_blank" > Behance </a></li>
                 <li><a href="Contract.html"> Contract </a></li>
             </ul>
         </div>
-        <img src="img/menu-btn.png" alt="menu-baby" class="menu-baby">
+        <button class="menu-baby" aria-controls="primary-navigation" aria-expanded="false">
+            <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100">
+              <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
+              </rect>
+              <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
+              </rect>
+              <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
+              </rect>
+            </svg>
+        </button>
     </nav>
     <header>
         <div class="container">
@@ -197,68 +205,15 @@
     </footer>
 
     <script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" defer=""></script>
-
-    <script type="text/javascript">
-            // <![CDATA[  <-- For SVG Portfolio
-            if ('WebSocket' in window) {
-                (function() {
-                    function refreshCSS() {
-                        var sheets = [].slice.call(document.getElementsByTagName("link"));
-                        var head = document.getElementsByTagName("head")[0];
-                        for (var i = 0; i < sheets.length; ++i) {
-                            var elem = sheets[i];
-                            var parent = elem.parentElement || head;
-                            parent.removeChild(elem);
-                            var rel = elem.rel;
-                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                            }
-                            parent.appendChild(elem);
-                        }
-                    }
-                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                    var address = protocol + window.location.host + window.location.pathname + '/ws';
-                    var socket = new WebSocket(address);
-                    socket.onmessage = function(msg) {
-                        if (msg.data == 'reload') window.location.reload();
-                        else if (msg.data == 'refreshcss') refreshCSS();
-                    };
-                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                        console.log('Live reload enabled.');
-                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                    }
-                })();
-            } else {
-                console.error('Nâng cấp trình duyệt của bạn. Trình duyệt này KHÔNG được hỗ trợ WebSocket để tải lại trực tiếp.');
-            }
-            // ]]>
-        </script>
-    <script src="./scripts/script.js"></script>
-    <script src="./scripts/player.js"></script>
-
 </body>
-
 <script src="./scripts/script.js"></script>
 <script src="./scripts/player.js"></script>
-
-<script>
-    const menubaby = document.querySelector(".menu-baby")
-    const navLinks = document.querySelector(".nav-links")
-
-    menubaby.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
-    })
-    
-</script>
-
 <audio id="lesson" src="assets\inten.mp3"  hidden="true" loop="true" autoplay="false"></audio>
-
 <script type="text/javascript">
     var play = false;
     var myAudio = document.getElementById("lesson");
 
-    myAudio.volume = 0.5;
+    myAudio.volume = 0.2;
 
     function onKeyDown(event) {
         switch (event.keyCode) {
