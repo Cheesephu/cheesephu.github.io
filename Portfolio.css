@@ -15,6 +15,7 @@
 }
 
 body{
+    min-width: 800px;
     margin:0;
     font-family: monospace;
     background-color: #fff7e1;
@@ -49,6 +50,7 @@ header::before{
 
 
 .navbar {
+    min-width: 800px;
     font-family: navbar-font;
     position: absolute;
     padding: 20px;
@@ -164,7 +166,8 @@ header::before{
         left: 8%;
         color: rgb(255, 0, 0);
         z-index: 1;
-        font-size: large;
+        min-width: 50px;
+        max-width: 1000px;
 
      
 
@@ -231,93 +234,6 @@ header::before{
     }
     
 }
-
-@media screen and (max-width: 1024px) {
-    .navbar {
-        padding: 0;
-        font-family: title-small;
-        font-size: large;
-        max-width: 1000px;
-    } 
-    
-    .navbar .logo {
-        position: absolute;
-        top: 50px;
-        left: 8%;
-        color: rgb(255, 0, 0);
-        z-index: 1;
-        font-size: large;
-
-     
-
-    }
-
-    .navbar .menu-baby {
-        display: block;
-        z-index: 2;
-        top: 50px;
-        left: 85%;
-        width: 20px;
-    }
-
-    button {
-        background: transparent;
-        border: 2px solid var(--button-color, #000);
-        border-radius:5px;
-      }
-
-    .nav-links {
-        left: 0;
-        background-color: rgba(255, 255, 255, 0.096);
-        backdrop-filter: blur(7px);
-        width: 500px;
-        height: 200vh ;
-        display: flex;
-        justify-content: center;
-        margin-left: -100%;
-        transition: all 0.5s ease ;
-        z-index: 1;
-        border-radius: 20px;
-        box-shadow: 0 5px 10px black;
-    }
-
-    .navbar a {
-        color: #000;
-    }
-
-    .nav-links.mobile-menu{
-        margin-left: 0 ;
-        /* z-index: 1; */
-    
-    }
-
-    .nav-links ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar .nav-links ul li {
-        margin: 25px 0;
-        font-size: 1.5em;
-
-    }
-    .listFigure .item .content{
-        font-size: xx-small;
-    }
-    .actor li img {
-        height: 20px;
-        width: 20px;
-    }
-
-    .actor li {
-        grid-template-columns: 20px auto ;
-    }
-    .actor .container .content{
-        font-size: xx-small;
-    }
-    
-}
-
 
 header h1{
     position: absolute;
@@ -538,8 +454,13 @@ footer button{
 }
 
 @media screen and (max-width: 820px) {
+
+
     header{
-        height: 50vh;
+        background-image: url(img/banner-adv.jpg);
+    }
+    .radianl{
+        font-size: 30px;
     }
     .checkin{
         grid-template-columns: auto auto;
