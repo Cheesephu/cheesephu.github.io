@@ -531,7 +531,7 @@ header{
 }
 
 
- @media screen and (max-width: 1545px) {
+ /* @media screen and (max-width: 1545px) {
 
     .listFigure .item .content{
         font-size: small;
@@ -546,7 +546,7 @@ header{
         font-size: xx-small;
     }
     
-}
+} */
 
 
 
@@ -632,7 +632,7 @@ header{
         font-size: x-small;
     }
 }
-@media screen and (max-width: 820px) {
+/* @media screen and (max-width: 820px) {
     
     .body{
         max-width: 820px;
@@ -660,7 +660,7 @@ header{
         .navbar .menu-baby{
             left: 90%;
         }
-}
+} */
 
 /* @media screen and (max-width: 720px) {
 .container{

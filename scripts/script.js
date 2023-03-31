@@ -53,5 +53,20 @@ if ('WebSocket' in window) {
     console.error('Nâng cấp trình duyệt của bạn. Trình duyệt này KHÔNG được hỗ trợ WebSocket để tải lại trực tiếp.');
 };
 
+function resizeContent() {
+    let windowHeight = window.innerHeight;
+    let windowWidth = window.innerWidth;
+    let contentHeight = document.getElementById("content").clientHeight;
+    let contentWidth = document.getElementById("content").clientWidth;
+
+    if (contentHeight > windowHeight) {
+      document.getElementById("content").style.transform = "scale(" + windowHeight / contentHeight + ")";
+    }
+    if (contentWidth > windowWidth) {
+      document.getElementById("content").style.transform = "scale(" + windowWidth / contentWidth + ")";
+    }
+  }
+
+  window.addEventListener("resize", resizeContent);
 
 
