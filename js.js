@@ -85,29 +85,6 @@ buttons.forEach((button) => {
     }
   });
 });
-
-const menubaby = document.querySelector(".menu-baby")
-const navLinks = document.querySelector(".nav-links")
-
-menubaby.addEventListener('click',()=>{
-navLinks.classList.toggle('mobile-menu')
-});
-const buttons = document.querySelectorAll("button");
-
-buttons.forEach((button) => {
- button.addEventListener("click", () => {
-const currentState = button.getAttribute("data-state");
-
-if (!currentState || currentState === "closed") {
-  button.setAttribute("data-state", "opened");
-  button.setAttribute("aria-expanded", "true");
-} else {
-  button.setAttribute("data-state", "closed");
-  button.setAttribute("aria-expanded", "false");
-}
-});
-});
-
 if ('WebSocket' in window) {
     (function() {
         function refreshCSS() {
@@ -140,19 +117,3 @@ if ('WebSocket' in window) {
 } else {
     console.error('Nâng cấp trình duyệt của bạn. Trình duyệt này KHÔNG được hỗ trợ WebSocket để tải lại trực tiếp.');
 };
-
-function resizeContent() {
-    let windowHeight = window.innerHeight;
-    let windowWidth = window.innerWidth;
-    let contentHeight = document.getElementById("content").clientHeight;
-    let contentWidth = document.getElementById("content").clientWidth;
-
-    if (contentHeight > windowHeight) {
-      document.getElementById("content").style.transform = "scale(" + windowHeight / contentHeight + ")";
-    }
-    if (contentWidth > windowWidth) {
-      document.getElementById("content").style.transform = "scale(" + windowWidth / contentWidth + ")";
-    }
-  }
-
-  window.addEventListener("resize", resizeContent);
