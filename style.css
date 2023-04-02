@@ -27,7 +27,6 @@ header {
     top: 0;
     width: calc(100% - 20px);
     padding: 10px;
-    border-bottom: 1px solid #ffffff;
     display: grid;
     /* justify-content: center; */
     text-align: center;
@@ -132,6 +131,10 @@ header input{
     display: none;
     position: fixed;
     z-index: 4;
+    right: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
     
 
 }
@@ -223,10 +226,6 @@ header input{
     background-image: var(--gradient-bg);
     color: #ffffff;
 }
-/* Desktops and laptops ----------- */
-@media  screen and (min-width:1224px) {
-	/* Styles */
-}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (max-width:1024px) {
 	/* Styles */
@@ -241,8 +240,15 @@ header input{
     .listProject{
         grid-template-columns: repeat(2, 1fr);
     }
-   
-}
+    header .navDiv{
+        font-size: 40px;
+        margin: 10px
+    }
+    header .logo img{
+        height: 60px;
+        margin: 10px;
+    }
+   }
 /* mobile */
 
 @media screen and (max-width: 767px){
@@ -258,16 +264,21 @@ header input{
     }
     header .navDiv{
         display: flex;
-        justify-content: end;
+        justify-content: center;
     }
+
     header label{
-        width: 70px;
-        height: 70px;
+        width: 10px;
+        height: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         color: red;
         border-radius: 50%;
+        margin: 20px;
+        /* font-weight: 60px; */
+        
     }
     header .nav{
         position: fixed;
@@ -563,4 +574,8 @@ img {
     .banner {
         margin-top: 10%;
     }
+}
+header .navDiv:active{
+background-color: #666;
+color: white;
 }
