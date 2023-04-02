@@ -455,8 +455,6 @@ footer button{
 
 @media screen and (max-width: 820px) {
 
-
-
     .radianl{
         font-size: 30px;
     }
@@ -465,6 +463,12 @@ footer button{
         grid-template-rows: 300px 300px 300px 300px;
     }
     .checkin .item:nth-child(2){
+        grid-column-start: unset;
+        grid-column-end: unset;
+        grid-row-start: unset;
+        grid-row-end: unset;
+    }
+    .checkin .item:nth-child(3){
         grid-column-start: unset;
         grid-column-end: unset;
         grid-row-start: unset;
