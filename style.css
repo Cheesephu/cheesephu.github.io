@@ -22,16 +22,21 @@ body{
     font-size: 15px;
    
 }
-header{
+header {
     position: relative;
     top: 0;
     width: calc(100% - 20px);
     padding: 10px;
     border-bottom: 1px solid #ffffff;
     display: grid;
-    grid-template-columns: 30% 70%;
+    /* justify-content: center; */
+    text-align: center;
+    grid-template-columns: 20% 75%;
     background-color: var(--light);
     z-index: 1;
+}
+header .logo{
+    left: 50px;
 }
 header .logo img{
     height: 50px;
@@ -125,6 +130,9 @@ header .navDiv,
 header .nav label,
 header input{
     display: none;
+    position: fixed;
+    z-index: 4;
+    
 
 }
 .nav li a {
