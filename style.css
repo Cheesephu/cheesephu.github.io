@@ -339,15 +339,14 @@ img {
     display: grid;
     grid-template-columns: auto;
     column-gap: 1%;
-    grid-template-rows: 300px 300px;
-    row-gap: 10px;
+    grid-template-rows: 500px 300px;
+    row-gap: 20px;
 }
 .checkin .item{
     position: relative;
     overflow: hidden;
     width: auto;
     border-radius: 10px;
-    box-shadow: 0 20px 50px #000000;
     box-shadow: var(--box-shadow);
 }
 .checkin img{
@@ -362,8 +361,9 @@ img {
     bottom:10px;
     background-color: #111111b4;
     border-radius: 10px;
-    padding: 9px;
+    padding: 10px;
     margin: auto;
+    text-align: left;
 
 }
 .checkin .item .content .des{
@@ -406,9 +406,7 @@ img {
         grid-column-start: 2;
         grid-row-start: 3;
         grid-row-end: 5;
-    }
-
-    
+    }  
   }
 
 
