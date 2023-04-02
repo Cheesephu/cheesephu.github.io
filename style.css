@@ -332,26 +332,21 @@ img {
 .navDiv ul li:hover{
     transform: scale(1.1);
 }
-.neu {
-    transform: scale(1);
-    transition: 0.5s;
-}
 
-.neu:hover{
-    transform: scale(1.2);
-}
+/* cai moi them */
 
 .checkin{
     display: grid;
-    grid-template-columns: 24.25% 24.25% 24.25% 24.25%;
+    grid-template-columns: auto;
     column-gap: 1%;
-    grid-template-rows:  300px 300px;
+    grid-template-rows: 300px 300px;
     row-gap: 10px;
 }
 .checkin .item{
     position: relative;
     overflow: hidden;
-    border-radius: 20px;
+    width: auto;
+    border-radius: 10px;
     box-shadow: 0 20px 50px #000000;
     box-shadow: var(--box-shadow);
 }
