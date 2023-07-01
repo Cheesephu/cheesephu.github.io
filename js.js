@@ -117,3 +117,23 @@ if ('WebSocket' in window) {
 } else {
     console.error('Nâng cấp trình duyệt của bạn. Trình duyệt này KHÔNG được hỗ trợ WebSocket để tải lại trực tiếp.');
 };
+
+window.addEventListener("scroll", function () {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  
+    // Hiển thị hoặc ẩn nút bấm quay về top dựa trên vị trí cuộn của trang
+    if (window.pageYOffset > 100) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  });
+  
+  // Xử lý sự kiện khi người dùng nhấp vào nút quay về top
+  document.getElementById("scrollToTopBtn").addEventListener("click", function () {
+    // Cuộn lên đầu trang một cách mượt mà trong khoảng thời gian 500ms
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
