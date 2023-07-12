@@ -137,3 +137,19 @@ window.addEventListener("scroll", function () {
       behavior: "smooth"
     });
   });
+
+
+// bonus 2
+
+var imageIndex = 1;
+var imageArray = ["img/f2 (1 of 4).JPG", "img/img-hover.jpg", "img/avata1.jpg"];
+
+function changeImage() {
+  var image = document.getElementById("myImage");
+  image.src = imageArray[imageIndex];
+  
+  imageIndex++;
+  if (imageIndex >= imageArray.length) {
+    imageIndex = 0;
+  }
+}
