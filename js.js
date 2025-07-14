@@ -153,3 +153,13 @@ function changeImage() {
     imageIndex = 0;
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll('.auto-slideshow .slide');
+    let current = 0;
+    setInterval(() => {
+        slides[current].classList.remove('active');
+        current = (current + 1) % slides.length;
+        slides[current].classList.add('active');
+    }, 2500); // đổi ảnh mỗi 3.5 giây
+});
